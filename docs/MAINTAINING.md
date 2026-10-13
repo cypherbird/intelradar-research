@@ -9,7 +9,7 @@ legal.html            risk disclosure, terms and privacy
 404.html              not-found page
 assets/css/site.css   all styles
 assets/js/site.js     mobile menu, image viewer, footer year
-assets/img/           logo, setup cards (WebP, 800 and 1600 px), social preview (og-card.jpg)
+assets/img/           logo, setup cards (WebP, 800 and 1600 px), social preview card (og-card-v2.jpg)
 assets/brand/         README artwork: animated banner, metrics, roadmap, product icons (SVG)
 favicon.svg  robots.txt  .nojekyll
 ```
