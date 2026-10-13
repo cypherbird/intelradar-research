@@ -40,5 +40,7 @@ wide (quality ~84) and keep the same file names, or add a new `<figure class="sh
 
 ## Content rules
 
-Research, not hype: no win-rate or profit claims, no "VIP", no urgency. Every result shown must come with its base
-rate or its stops. Not financial advice.
+Business-class research brand: lead with value, never with "not a scam" denials. Say "setups", never "calls" or
+"free calls". No win-rate or profit claims; every result shown comes with its base rate or its stops. Metrics on the
+page must be real (published setups and coverage are counted from the production server). Motto: "Clarity is
+freedom." / "Navigate open markets with evidence." Not financial advice.
