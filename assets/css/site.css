@@ -206,20 +206,16 @@ p { margin: 0 0 1em; }
 .shot figcaption strong { display: block; color: var(--text); font-size: 1.04rem; margin-bottom: 4px; }
 .shot-note { margin-top: 22px; color: var(--faint); font-size: .88rem; }
 
-/* principles + research log */
-.principle { display: flex; gap: 16px; padding: 22px 0; border-top: 1px solid var(--line); }
-.principle:first-child { border-top: 0; padding-top: 0; }
-.principle .num { font-family: var(--mono); color: var(--gold); font-weight: 700; font-size: .9rem; min-width: 30px; padding-top: 3px; }
-.principle h3 { margin-bottom: 4px; }
-.principle p { margin: 0; color: var(--muted); font-size: .97rem; }
-.research-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 56px; align-items: start; }
-@media (max-width: 980px) { .research-grid { grid-template-columns: 1fr; gap: 44px; } }
-.rejected { display: grid; gap: 14px; }
-.reject { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--red); border-radius: var(--radius-sm); padding: 20px 22px; }
-.reject .verdict { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: .74rem; font-weight: 700; letter-spacing: .12em; color: var(--red); margin-bottom: 8px; }
-.reject h3 { font-size: 1.05rem; margin-bottom: 6px; }
-.reject p { margin: 0; color: var(--muted); font-size: .93rem; }
-.rejected-head { font-size: .78rem; font-weight: 750; letter-spacing: .2em; text-transform: uppercase; color: var(--faint); margin: 0 0 4px; }
+/* research standards */
+.standards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 980px) { .standards { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .standards { grid-template-columns: 1fr; } }
+.standards > * { min-width: 0; }
+.principle { display: flex; gap: 16px; background: var(--surface); border: 1px solid var(--line); border-top: 2px solid rgba(217, 171, 79, .55); border-radius: var(--radius); padding: 24px; }
+.principle .num { font-family: var(--mono); color: var(--gold); font-weight: 700; font-size: .9rem; min-width: 26px; padding-top: 3px; }
+.principle h3 { margin-bottom: 6px; }
+.principle p { margin: 0; color: var(--muted); font-size: .96rem; }
+@media (max-width: 480px) { .principle { padding: 22px 18px; } }
 
 /* tiers */
 .tiers { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: stretch; }
@@ -239,7 +235,7 @@ p { margin: 0 0 1em; }
 .tier.pro li svg { color: var(--gold-2); }
 .tier .fine { color: var(--faint); font-size: .86rem; margin: 14px 0 0; }
 .tier .btn { justify-content: center; white-space: normal; text-align: center; line-height: 1.25; }
-.tiers > *, .grid-3 > *, .grid-2 > *, .gallery > *, .steps > *, .hero-grid > *, .research-grid > * { min-width: 0; }
+.tiers > *, .grid-3 > *, .grid-2 > *, .gallery > *, .steps > *, .hero-grid > * { min-width: 0; }
 @media (max-width: 480px) {
   .tier { padding: 24px 20px; }
   .card, .step { padding: 22px 18px; }
