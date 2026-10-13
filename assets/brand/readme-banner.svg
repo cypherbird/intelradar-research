@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-label="IntelRadar Research. Clarity is freedom. Navigate open markets with evidence.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111a2e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="10%" r="60%">
+      <stop offset="0" stop-color="#6c9cff" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#6c9cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2cb78"/>
+      <stop offset="1" stop-color="#b8862b"/>
+    </linearGradient>
+    <linearGradient id="sweepFill" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ecc778" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ecc778" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ecf1f8" stroke-opacity=".045"/>
+    </pattern>
+    <clipPath id="typeClip"><rect class="reveal" x="420" y="268" width="442" height="40"/></clipPath>
+  </defs>
+  <style>
+    .sweep { transform-origin: 200px 200px; animation: spin 6s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .blip { transform-box: fill-box; transform-origin: center; animation: blip 3s ease-in-out infinite; }
+    .b2 { animation-delay: 1s; } .b3 { animation-delay: 2s; }
+    @keyframes blip { 0%, 100% { opacity: .25; transform: scale(.7); } 50% { opacity: 1; transform: scale(1.2); } }
+    .rise { animation: rise .9s ease-out both; }
+    .d1 { animation-delay: .15s; } .d2 { animation-delay: .5s; } .d3 { animation-delay: .9s; } .d4 { animation-delay: 4.3s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    .reveal { transform-box: fill-box; transform-origin: left center; animation: reveal 2.4s steps(36, end) 1.6s both; }
+    @keyframes reveal { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .caret { animation: caret 2.4s steps(36, end) 1.6s both, blink 1s step-end 4s infinite; }
+    @keyframes caret { from { transform: translateX(0); } to { transform: translateX(440px); } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .sweep, .blip, .rise, .reveal, .caret { animation: none; } .caret { opacity: 0; } }
+  </style>
+
+  <rect width="1280" height="400" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="400" rx="24" fill="url(#grid)"/>
+  <rect width="1280" height="400" rx="24" fill="url(#glow)"/>
+  <rect x=".5" y=".5" width="1279" height="399" rx="23.5" fill="none" stroke="#2a3758"/>
+
+  <!-- radar -->
+  <g>
+    <circle cx="200" cy="200" r="132" fill="#0e1628" stroke="url(#gold)" stroke-width="2.5"/>
+    <circle cx="200" cy="200" r="92" fill="none" stroke="#d4a64a" stroke-opacity=".45" stroke-width="1.5"/>
+    <circle cx="200" cy="200" r="52" fill="none" stroke="#d4a64a" stroke-opacity=".3" stroke-width="1.5"/>
+    <path d="M68 200H332M200 68V332" stroke="#ecf1f8" stroke-opacity=".12"/>
+    <g class="sweep">
+      <path d="M200 200 L332 200 A132 132 0 0 0 284.85 98.88 Z" fill="url(#sweepFill)"/>
+      <line x1="200" y1="200" x2="332" y2="200" stroke="#ecc778" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <circle class="blip" cx="252" cy="138" r="6" fill="#34d39e"/>
+    <circle class="blip b2" cx="146" cy="252" r="5" fill="#ecc778"/>
+    <circle class="blip b3" cx="268" cy="246" r="4.5" fill="#34d39e"/>
+    <circle cx="200" cy="200" r="5" fill="#ecc778"/>
+  </g>
+
+  <!-- words -->
+  <g font-family="Segoe UI, -apple-system, Helvetica Neue, Arial, sans-serif">
+    <text class="rise d1" x="420" y="112" font-size="16" font-weight="700" letter-spacing="5" fill="#ecc778">QUANTITATIVE CRYPTO RESEARCH</text>
+    <text class="rise d1" x="418" y="176" font-size="60" font-weight="700" letter-spacing="-1.5" fill="#ecf1f8">IntelRadar Research</text>
+    <text class="rise d2" x="420" y="236" font-size="40" font-weight="700" letter-spacing="-.8" fill="#ecf1f8">Clarity is <tspan fill="#ecc778">freedom.</tspan></text>
+    <text x="420" y="296" font-size="26" fill="#a6b1c6" textLength="436" lengthAdjust="spacingAndGlyphs" clip-path="url(#typeClip)">Navigate open markets with evidence.</text>
+    <rect class="caret" x="422" y="274" width="3" height="28" fill="#ecc778"/>
+    <g class="rise d4" font-size="15" fill="#a6b1c6">
+      <circle cx="426" cy="347" r="5" fill="#34d39e"/>
+      <text x="440" y="352">Free tier live on Telegram</text>
+      <circle cx="660" cy="347" r="5" fill="#ecc778"/>
+      <text x="674" y="352">Pro Desk early access</text>
+      <circle cx="864" cy="347" r="5" fill="#6c9cff"/>
+      <text x="878" y="352">TradingView indicators planned</text>
+    </g>
+  </g>
+</svg>

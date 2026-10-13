@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="220" viewBox="0 0 1280 220" role="img" aria-label="The desk in numbers: 550+ setups published since August 2026; 390 coins in research coverage; 6 market scans every day; 24/7 production research desk.">
+  <style>
+    .rise { animation: rise .8s ease-out both; }
+    .d1 { animation-delay: .1s; } .d2 { animation-delay: .35s; } .d3 { animation-delay: .6s; } .d4 { animation-delay: .85s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    .bar { transform-box: fill-box; transform-origin: left center; animation: grow 1.2s ease-out both; }
+    .bar.d1 { animation-delay: .4s; } .bar.d2 { animation-delay: .65s; } .bar.d3 { animation-delay: .9s; } .bar.d4 { animation-delay: 1.15s; }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @media (prefers-reduced-motion: reduce) { .rise, .bar { animation: none; } }
+  </style>
+  <rect x=".5" y=".5" width="1279" height="219" rx="20" fill="#0e1628" stroke="#2a3758"/>
+  <g font-family="Segoe UI, -apple-system, Helvetica Neue, Arial, sans-serif">
+    <text x="56" y="48" font-size="14" font-weight="700" letter-spacing="4" fill="#ecc778">THE DESK IN NUMBERS</text>
+    <path d="M340 76V186M640 76V186M940 76V186" stroke="#1d2842" stroke-width="2"/>
+
+    <g class="rise d1">
+      <text x="56" y="128" font-size="54" font-weight="700" letter-spacing="-1.5" fill="#ecf1f8">550+</text>
+      <text x="56" y="164" font-size="17" fill="#a6b1c6">setups published since Aug 2026</text>
+    </g>
+    <rect class="bar d1" x="56" y="180" width="120" height="4" rx="2" fill="#d4a64a"/>
+
+    <g class="rise d2">
+      <text x="372" y="128" font-size="54" font-weight="700" letter-spacing="-1.5" fill="#ecf1f8">390</text>
+      <text x="372" y="164" font-size="17" fill="#a6b1c6">coins in research coverage</text>
+    </g>
+    <rect class="bar d2" x="372" y="180" width="120" height="4" rx="2" fill="#d4a64a"/>
+
+    <g class="rise d3">
+      <text x="672" y="128" font-size="54" font-weight="700" letter-spacing="-1.5" fill="#ecf1f8">6</text>
+      <text x="672" y="164" font-size="17" fill="#a6b1c6">market scans every day</text>
+    </g>
+    <rect class="bar d3" x="672" y="180" width="120" height="4" rx="2" fill="#d4a64a"/>
+
+    <g class="rise d4">
+      <text x="972" y="128" font-size="54" font-weight="700" letter-spacing="-1.5" fill="#ecf1f8">24/7</text>
+      <text x="972" y="164" font-size="17" fill="#a6b1c6">production research desk</text>
+    </g>
+    <rect class="bar d4" x="972" y="180" width="120" height="4" rx="2" fill="#34d39e"/>
+  </g>
+</svg>

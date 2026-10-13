@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="TradingView Pro Indicators">
+  <style>
+    .line { stroke-dasharray: 70; animation: draw 2.6s ease-out infinite; }
+    @keyframes draw { 0% { stroke-dashoffset: 70; } 60%, 100% { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .line { animation: none; } }
+  </style>
+  <rect x="1" y="1" width="70" height="70" rx="16" fill="#111a2e" stroke="#2a3758" stroke-width="2"/>
+  <path d="M14 25H58" stroke="#34d39e" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <path d="M14 47H58" stroke="#ff5f7e" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <rect x="20" y="36" width="5" height="9" rx="1" fill="#6c9cff" fill-opacity=".55"/>
+  <rect x="31" y="31" width="5" height="11" rx="1" fill="#6c9cff" fill-opacity=".75"/>
+  <rect x="42" y="27" width="5" height="10" rx="1" fill="#6c9cff"/>
+  <path class="line" d="M16 44 L27 38 L36 40 L47 30 L56 27" fill="none" stroke="#ecc778" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
